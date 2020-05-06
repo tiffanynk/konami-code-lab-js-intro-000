@@ -18,7 +18,7 @@ function init() {
     const key = e.key;
 
     if (codes[i] === key) {
-      index++;
+      i++;
 
       if (i === codes.length) {
         alert("YEEEE!");
