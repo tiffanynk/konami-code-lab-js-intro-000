@@ -16,19 +16,19 @@ function init() {
 
   document.body.addEventListener('keydown', (event) => {
     const key = e.key;
-    console.error('inside')
+
     if (codes[i] === key) {
       i++;
-console.error('first if')
+
       if (i === codes.length) {
-        alert('Hurray!');
+        alert('Yay!');
 
         i = 0;
-        console.error('second if')
+
       }
     } else {
       i = 0;
-      console.error('else')
+
     }
   });
 }
