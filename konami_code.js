@@ -1,9 +1,3 @@
-document.body.addEventListener("keydown", function(e) {
-  init(e)
-});
-
-let i = 0;
-
 const codes = [
   "ArrowUp",
   "ArrowUp",
@@ -17,17 +11,21 @@ const codes = [
   "a"
 ];
 
-function init(e) {
-  const key = e.key;
+function init() {
+  let i = 0;
 
-  if (codes[i] === key) {
-    i++;
+  document.body.addEventListener("keydown", function(e) {
+    const key = e.key;
 
-    if (i === codes.length) {
-      alert('Hurray!');
+    if (codes[i] === key) {
+      i++;
+
+      if (i === codes.length) {
+        alert('Hurray!');
+        i = 0;
+      }
+    } else {
       i = 0;
     }
-  } else {
-    i = 0;
-  }
+  });
 }
