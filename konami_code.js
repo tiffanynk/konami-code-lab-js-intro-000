@@ -13,24 +13,6 @@ const codes = [
 
 let i = 0;
 
-function init(e) {
-  const key = e.key;
-
-  if (key === codes[i]) {
-    i++;
-
-    if (i === codes.length) {
-      alert('Yay!');
-
-      i = 0;
-
-    }
-  } else {
-    i = 0;
-
-  }
+function init() {
+  
 }
-
-document.body.addEventListener('keydown', (event) => {
-  init(event);
-});
